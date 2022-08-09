@@ -78,10 +78,10 @@ for(read1_ in 1:dim(read_genes_from_)[1]){
 	file_name <- paste0(pre_fix, "x", in_title_, grab0_, "____.pdf")
 	pdf(file = file_name, height = 4)
 	par(mfrow = c(1,2), cex = 0.5)
-	plot(my_tsne_pc_cpm_data_stanford_pt_samples[,2], my_tsne_pc_cpm_data_stanford_pt_samples[,1], pch = 19, col = cols.by.raw.counts)
+	plot(my_tsne_pc_cpm_data1_[,2], my_tsne_pc_cpm_data1_[,1], pch = 19, col = cols.by.raw.counts)
 	title(sub = paste0(dim(genes_)[1], " genes| ave_expression"))
 
-	plot(my_tsne_pc_cpm_data_stanford_pt_samples[,2], my_tsne_pc_cpm_data_stanford_pt_samples[,1], pch = 19, col = cols.by.matrix_out)
+	plot(my_tsne_pc_cpm_data1_[,2], my_tsne_pc_cpm_data1_[,1], pch = 19, col = cols.by.matrix_out)
 	legend("bottomright", legend = legend.by.matrix_out[,3], text.col = legend.by.matrix_out[,2], bty = "n")
 	title_ <- in_title_ 
 	sub_title_ <- paste0(" extend_", grab1_[grab0_], "sub", dim(matrix_out)[1])
