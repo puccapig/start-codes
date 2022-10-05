@@ -4,7 +4,7 @@ a <- c(1:10000)
 b <- c(1:10)
 col.ab <- rainbow(10)
 
-source("/Users/rachelnong/Desktop/paperdna_codes/select_n_cell.R")#500
+source("~select_n_cell.R")#500
 a <- a[o]
 
 dev.new()
@@ -18,10 +18,4 @@ title(sub = "y ~ b/x | b in 1:10")
 
 legend.ab <- paste0("y ~ ", b, "/x")
 legend("topright", legend = legend.ab, col.text = col.ab, bty = "n")
-
-
-
-
-
-
 
